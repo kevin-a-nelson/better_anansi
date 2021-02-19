@@ -1,0 +1,23 @@
+{
+    "name": "Better Anansi",
+    "description": "A better layout for Anansi",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "css": ["content.css"],
+        "matches": ["http://anansi.stolaf.edu/alg/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "browser_action": {
+      "default_title": "Better Anansi",
+      "default_popup": "popup.html"
+    }
+}
+  
